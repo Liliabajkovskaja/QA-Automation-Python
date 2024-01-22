@@ -7,9 +7,14 @@ If the list is empty, this is reported and the program ends"""
 products = input("Please enter your products: ")
 
 if not products.strip():
-    print("List of products is empty!!! Program has stopped")
+    print("List of products is empty. Program has stopped")
+
 else:
     shopping_list = products.split()
+    for word in shopping_list:
+        if not word.isalpha():
+            print("You entered incorrect values. Program has stopped. ")
+            exit()
     print(f"List of products: {shopping_list}")
 
     while len(shopping_list) > 0:
