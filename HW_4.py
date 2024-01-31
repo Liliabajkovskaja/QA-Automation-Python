@@ -11,7 +11,7 @@ Names are indicated in each group. Display those who won the jackpot (in 3 lists
 # print(f"Those who won the jackpot: {winners}")
 
 """2.The dictionary has the following data: {'Alex': 'house', 'Max': 'Flat', 'Olha': 'Appartments', 'Oleh': 'Trench'}
-Using f-string output: "User_name is living in place_name" for each user. Use a loop"""
+Using f-string output: "User_name is living in place_name" for each user. Use a loop."""
 
 # dictionary = {
 #     'Alex': 'House',
