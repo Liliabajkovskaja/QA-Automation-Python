@@ -71,7 +71,7 @@ Do not use methods/functions/classes"""
 
 """6. Solve task 4 without a dictionary in 2 terms:
 1 line is input
-The 2nd line is the decision"""
+The 2nd line is the decision."""
 
 # user_input = input(f"Please enter some text ")
 # [print(f"{k}: {user_input.count(k)}") for k in set(user_input) if k.isalpha()]
