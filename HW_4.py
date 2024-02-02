@@ -11,7 +11,7 @@ Names are indicated in each group. Display those who won the jackpot (in 3 lists
 # print(f"Those who won the jackpot: {winners}")
 
 """2.The dictionary has the following data: {'Alex': 'house', 'Max': 'Flat', 'Olha': 'Appartments', 'Oleh': 'Trench'}
-Using f-string output: "User_name is living in place_name" for each user. Use a loop"""
+Using f-string output: "User_name is living in place_name" for each user. Use a loop."""
 
 # dictionary = {
 #     'Alex': 'House',
@@ -20,7 +20,7 @@ Using f-string output: "User_name is living in place_name" for each user. Use a 
 #     'Oleh': 'Trench'}
 #
 # for user in dictionary:
-#     print(f"User_name is living in place_name - {dictionary[user]}")
+#     print(f"{user} is living in  {dictionary[user]}")
 
 """3.There is a list ['Jack', 'Leon', 'Alice', None, 32, 'Bob']
 Output ONLY correct names (strings). Use Continue."""
@@ -56,12 +56,22 @@ We go through the list in a cycle
 Do not create variables (except for the list mentioned above)
 use if 1 time
 Do not use methods/functions/classes"""
-#
+
 # my_list = ['Bob', 'Kate', 'Vasyl', None, 3]
 #
+# found_none = False
+#
 # for el in my_list:
-#     if el == None:
-#         print(f'There is  None in my_list')
-#     else:
-#         continue
+#     if el is None:
+#         found_none = True
+#         break
+#
+# if not found_none:
+#     print('There is no None in my_list')
 
+"""6. Solve task 4 without a dictionary in 2 terms:
+1 line is input
+The 2nd line is the decision."""
+
+# user_input = input(f"Please enter some text ")
+# [print(f"{k}: {user_input.count(k)}") for k in set(user_input) if k.isalpha()]
