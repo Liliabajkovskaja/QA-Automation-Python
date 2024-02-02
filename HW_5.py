@@ -64,6 +64,8 @@ while counter_error > 0:
         print(f"WrongOperatorError: {y}")
     except ValueError as z:
         print(f"ValueError: {z}")
+    except ZeroDivisionError as c:
+        print(f"ZeroDivisionError: {c} ")
     except Exception as e:
         print(f"Error: {e}")
     counter_error -= 1
