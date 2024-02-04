@@ -53,34 +53,34 @@ Example output:
 5 * 10 = 50
 sum is 95 # 5+6+7+8+9+10+11+12+13+14 = 95 """
 
-
-def get_sum(number: int, operation: str):
-    def print_table():
-        i = 1
-        while i <= 10:
-            if operation == "*":
-                print(f" {number} * {i} = {number * i}")
-            elif operation == "/":
-                result = number / i
-                print(f"{number} / {i} = {result:.2f}")
-            elif operation == "+":
-                print(f" {number} + {i} = {number + i}")
-            elif operation == "-":
-                print(f" {number} - {i} = {number - i}")
-            i += 1
-
-    print_table()
-
-    sum_numbers = 0
-
-    for number in range(number, number + 10):
-        sum_numbers += number
-
-    print(f"Sum is {sum_numbers}")
-
-
-if __name__ == '__main__':
-    get_sum(5, "*")
+#
+# def get_sum(number: int, operation: str):
+#     def print_table():
+#         i = 1
+#         while i <= 10:
+#             if operation == "*":
+#                 print(f" {number} * {i} = {number * i}")
+#             elif operation == "/":
+#                 result = number / i
+#                 print(f"{number} / {i} = {result:.2f}")
+#             elif operation == "+":
+#                 print(f" {number} + {i} = {number + i}")
+#             elif operation == "-":
+#                 print(f" {number} - {i} = {number - i}")
+#             i += 1
+#
+#     print_table()
+#
+#     sum_numbers = 0
+#
+#     for number in range(number, number + 10):
+#         sum_numbers += number
+#
+#     print(f"Sum is {sum_numbers}")
+#
+#
+# if __name__ == '__main__':
+#     get_sum(5, "*")
 
 
 
