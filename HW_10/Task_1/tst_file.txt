@@ -2,3 +2,4 @@ name,last_name,age,salary
 Leo,Moracchioli,50,5000
 Bob, Biber,45,6000
 Mery, Miler,25,8000
+Lemmy,Kilmister,83,0
