@@ -4,4 +4,4 @@ class Writer:
 
     def write_to_file(self, data):
         with open(self.file_path, 'a') as f:
-            f.write(data + '\n')
+            f.write(data)
