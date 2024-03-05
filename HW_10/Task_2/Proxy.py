@@ -7,9 +7,10 @@ class ProxyReaderWriter:
     def __init__(self, file_path):
         self.file_path = file_path
         self.reader = Reader(file_path)
+        self.writer = Writer(self.file_path)
         self.data = None
         self.modified = False
-        self.writeData = ''
+        self.write_data = ''
 
     def read(self):
         if os.path.getsize(self.file_path) == 0:
@@ -21,25 +22,20 @@ class ProxyReaderWriter:
             self.data = self.reader.data
             print(f'File is reading: {self.data}')
             self.modified = False
-            return
         else:
             print(f'File is NOT reading: {self.data}')
-            return
 
     def write(self, row):
-        self.read()
-        if str(row) == str(self.writeData):
+
+        if str(row) == str(self.write_data):
             print(f"You have re-entered the same data '{row}'")
             self.modified = False
-            return
         else:
-            writer = Writer(self.file_path)
-            writer.write_to_file(row)
+            self.writer.write_to_file(row)
             self.reader.read_file()
-            self.writeData = row
+            self.write_data = row
             self.modified = True
             print(f"Data '{row}' has been added to the file.")
-            return
 
 
 proxy_rw = ProxyReaderWriter(file_path='tst.txt')
